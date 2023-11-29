@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_story"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:src="@drawable/icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/title_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/label_email"
+                android:alpha="0"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/title_login"
+                app:layout_constraintStart_toStartOf="@+id/title_login"
+                app:layout_constraintTop_toBottomOf="@+id/title_login" />
+
+            <com.dicoding.thestoryapp.ui.custom_ui.CustomEmailEditText
+                android:id="@+id/login_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:alpha="0"
+                android:background="@drawable/bg_edit_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_email" />
+
+            <TextView
+                android:id="@+id/title_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/label_password"
+                android:alpha="0"
+                android:textAlignment="textStart"
+                android:textColor="@color/color_black"
+                app:layout_constraintEnd_toEndOf="@+id/title_login"
+                app:layout_constraintStart_toStartOf="@+id/title_login"
+                app:layout_constraintTop_toBottomOf="@+id/login_email" />
+
+            <com.dicoding.thestoryapp.ui.custom_ui.CustomPasswordEditText
+                android:id="@+id/login_password"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_edit_text"
+                android:alpha="0"
+                app:layout_constraintEnd_toEndOf="@+id/login_email"
+                app:layout_constraintStart_toStartOf="@+id/login_email"
+                app:layout_constraintTop_toBottomOf="@+id/title_password" />
+
+            <com.dicoding.thestoryapp.ui.custom_ui.CustomButton
+                android:id="@+id/btn_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textStyle="bold"
+                android:text="@string/label_btn_login"
+                android:enabled="false"
+                android:alpha="0"
+                app:layout_constraintEnd_toEndOf="@+id/login_password"
+                app:layout_constraintStart_toStartOf="@+id/login_password"
+                app:layout_constraintTop_toBottomOf="@+id/login_password" />
+
+            <TextView
+                android:id="@+id/title_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/login"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:alpha="0"
+                android:lineHeight="35dp"
+                android:textColor="@color/color_black"
+                app:layout_constraintEnd_toEndOf="@+id/login_email"
+                app:layout_constraintStart_toStartOf="@+id/login_email"
+                app:layout_constraintTop_toBottomOf="@+id/img_story" />
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/poppins"
+                android:textStyle="bold"
+                android:text="@string/register"
+                android:textAlignment="center"
+                android:alpha="0"
+                android:textColor="@color/color_dark_grey"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/btn_login"
+                app:layout_constraintStart_toStartOf="@+id/btn_login"
+                app:layout_constraintTop_toBottomOf="@+id/Atau" />
+
+            <TextView
+                android:id="@+id/Atau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="@string/atau"
+                android:textAlignment="center"
+                android:alpha="0"
+                android:textColor="@color/color_dark_grey"
+                app:layout_constraintEnd_toEndOf="@+id/btn_login"
+                app:layout_constraintStart_toStartOf="@+id/btn_login"
+                app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rlLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_black_transparent" />
+
+        <ProgressBar
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

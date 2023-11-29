@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">The Story App</string>
+
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="tambah_story">Add Story</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="label_name">Name</string>
+    <string name="hint_name">Name...</string>
+    <string name="label_email">Email</string>
+    <string name="label_password">Password</string>
+    <string name="password">Password must not be less than 8 characters!</string>
+    <string name="label_konfirmasi_password">Re-enter Password</string>
+    <string name="label_btn_registrasi">Register</string>
+    <string name="atau">- Or -</string>
+    <string name="login">Login</string>
+    <string name="label_btn_login">Login</string>
+    <string name="register">Register</string>
+    <string name="hint_masukkan_deskripsi">enter a description...</string>
+    <string name="label_deskripsi">Description</string>
+    <string name="label_upload_foto">Upload Picture</string>
+    <string name="gambar_story">Picture story</string>
+    <string name="label_btn_tambah_story">Add Story</string>
+    <string name="pick_image">Pick Image</string>
+    <string name="switch_camera">Switch Camera</string>
+    <string name="upload_from">Upload From:</string>
+    <string name="close_dialog">Close dialog</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="logout">Logout</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="map_view_story">Map view story</string>
+    <string name="error_get_data_please_try_again">Error get data please try again!</string>
+    <string name="retry">Retry</string>
+</resources>
